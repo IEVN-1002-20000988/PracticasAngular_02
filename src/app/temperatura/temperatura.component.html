@@ -1,0 +1,50 @@
+<h1>Conversor de temperatura</h1>
+<hr>
+<div class ="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label class="form-label" for="">Temperatura</label>
+            <input type="text" class="form-control" name="temperatura" [(ngModel)]="num" placeholder="Temperatura" >
+        </div>
+        <hr>
+        <div class="mb-6">
+            <label for="">
+                <input id="opcion1" type="radio" name="temp" value="1" [(ngModel)]="operacion"> Farenheit
+                <input id="opcion2" type="radio" name="temp" value="2" [(ngModel)]="operacion"> Celsius
+            </label>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <button (click)="camTemp()" class="btn btn-primary">Calcular </button>
+        </div>
+    </div>
+    
+    <div class="col-6">
+        <h2>La temperatura es: {{resultado}}</h2>
+    </div>
+</div>
+
+<!--<div class ="row">
+    <h2>Conversor a Celsius</h2>
+    <div class="col-6">
+        <div class="mb-3">
+            <label class="form-label" for="">Temperatura en Farenheit</label>
+            <input type="text" class="form-control" name="temperatura" [(ngModel)]="num2" placeholder="Temperatura" >
+        </div>
+        <hr>
+        <div class="mb-6">
+            <label for="">
+                <input id="opcion1" type="radio" name="temp" value="1"> Farenheit
+                <input id="opcion2" type="radio" name="temp" value="2"> Celsius
+            </label>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <button (click)="celsius()" class="btn btn-primary">Calcular </button>
+        </div>
+    </div>
+    
+    <div class="col-6">
+        <h2>Resultado en Celsius: {{resultado2}}</h2>
+    </div>
+</div>-->
