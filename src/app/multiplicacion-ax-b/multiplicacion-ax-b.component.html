@@ -1,0 +1,27 @@
+<br>
+<div class="container">
+
+    <div class="flexbox-container">
+        <section>
+            <p>Numero 1:
+            <mat-form-field>
+                <input matInput  type="number" [(ngModel)]="num1" placeholder="">
+            </mat-form-field>
+            </p>
+            <p> Numero 2:
+                <mat-form-field>
+                    <input matInput type="number" [(ngModel)]="num2" placeholder="">
+                </mat-form-field>
+            </p>
+            <button mat-raised-button color="primary" (click)="cadenaNumeros()" (click)="multiplicacion()">Sumar</button>
+        </section>
+        <br>
+        <section>
+            <p>N1: {{num1}}</p>
+            <p>N2: {{num2}}</p>
+            <p>{{texto}} {{cadena}} = {{res}}</p>
+        </section>
+    </div>
+    
+
+</div>

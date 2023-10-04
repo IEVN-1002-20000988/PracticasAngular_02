@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import { TemperaturaComponent } from './temperatura/temperatura.component';
 import { TemperatureListComponent } from './temperature-list/temperature-list.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { MultiplicacionAxBComponent } from './multiplicacion-ax-b/multiplicacion-ax-b.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemperaturaComponent,
-    TemperatureListComponent
+    TemperatureListComponent,
+    MultiplicacionAxBComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
