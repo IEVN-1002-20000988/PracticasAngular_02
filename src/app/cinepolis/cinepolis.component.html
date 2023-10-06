@@ -1,0 +1,83 @@
+
+<body>
+  <div class="container">
+   <br>
+    <h1 class="titulo">Cinepolis</h1>
+    <section class="ext">
+      <div class ="row">
+        <div class="col-6" class="estetica">
+            <h1>Entradas</h1>
+            <div class="mb-3" >
+                <h2>
+                  Nombre <input type="text" class="form-control" name="nombre" [(ngModel)]="nombre">
+                </h2>
+            </div>
+            <div class="mb-3" >
+              <h2>
+                Cantidad compradores <input type="number" class="form-control" name="personas" [(ngModel)]="compradores">
+              </h2>
+            </div>
+            <br>
+            <div class="mb-6">
+                <label for="">
+                    <h2>¿Quiere usar su tarjeta Cinepolis?</h2>
+                    <input id="opcion1" type="radio" name="tarjeta" value="1" [(ngModel)]="tarjeta"> Si
+                    <input id="opcion2" type="radio" name="tarjeta" value="2" [(ngModel)]="tarjeta"> No
+                </label>
+            </div>
+            <br>
+            <div class="mb-3" >
+              <h2>
+                Cantidad De Boletos <input type="number" class="form-control" name="boletos" [(ngModel)]="boletos">
+              </h2>
+            </div>
+        </div>
+      
+        <div class="col-6" class="estetica">
+            <h1>Salida</h1>
+            <div class="mb-3" >
+              <h3>
+                 {{textoNombre}}
+              </h3>
+              <h3>
+                {{textoCompradores}}
+              </h3>
+              <h3>
+                {{textoBoletos}}
+              </h3>
+              <h3>
+                {{textoTarjeta}}
+              </h3>
+              <h2>
+                {{textoResultado}}
+              </h2>
+            </div>
+        </div>
+    
+        <div class="col-6" class="calcular">
+          <h2>Acciones</h2>
+          <div class="botones">
+            <div class="mb-3">
+              <button class="btn btn-primary btn-lg btn-block boton" (click)="procesar()">Procesar </button>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-danger btn-lg btn-block boton" (click)="reiniciar()">Salir </button>
+            </div>
+          </div>
+          <div>
+            <h3>{{textoAviso}}</h3>
+          </div>
+          
+        </div>
+        
+      </div>
+      <br>
+    </section>
+  </div>
+  
+  
+  
+    
+  
+  
+</body>

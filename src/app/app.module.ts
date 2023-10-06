@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MultiplicacionAxBComponent } from './multiplicacion-ax-b/multiplicacion-ax-b.component';
+import { CinepolisComponent } from './cinepolis/cinepolis.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemperaturaComponent,
     TemperatureListComponent,
-    MultiplicacionAxBComponent
+    MultiplicacionAxBComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
